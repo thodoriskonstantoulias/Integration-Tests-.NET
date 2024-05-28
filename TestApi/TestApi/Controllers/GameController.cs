@@ -27,7 +27,7 @@ namespace TestApi.Controllers
         public ActionResult CreateGame(Game game)
         {
             this.databaseService.AddGame(game);
-            return Created();
+            return Ok(game);
         }
 
     }
